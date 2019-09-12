@@ -1,0 +1,134 @@
+#Week4 , Day20
+thisset1 = {"A" , "A" , "B", 2,4}
+print(thisset1)
+
+for k in thisset1:
+    print(thisset1)
+
+print("B" in thisset1)
+print("C" in thisset1)
+
+thisset1.add("D")
+print(thisset1)
+
+thisset1.update(["F" ,"E" , "G"])
+print(thisset1)
+
+
+#Week4, Day21
+thisset2 =set(("apple" , "banana" , "cherry" , "orange" , "M" ))
+print(len(thisset2))
+thisset2.remove("banana")
+print(thisset2)
+
+thisset2.discard("apple")
+print(thisset2)
+
+x1 = thisset2.pop()
+print(x1)
+
+#del thisset2
+#print(thisset2)
+
+
+
+#Week4 , Day22
+thissdict2 = {
+    "brand" : "Ford" ,
+    "mode1" : "Mustang" , 
+    "year" : 1964
+    }
+v = thissdict2 [ "mode1" ]
+print(v)
+
+v = thissdict2.get ("year")
+print(v)
+
+thissdict2["brand"] = "B"
+print(thissdict2)
+
+for y in thissdict2:
+    print(thissdict2[y])
+
+for x , y in thissdict2.items ():
+    print(x , y)
+
+
+#Week4 , Day23
+thissdict3 = {
+    "brand1" : "Ford" ,
+    "mode11" : "Mustang" , 
+    "year1" : 1964
+    }
+if "mode11" in thissdict3:
+    print("Yes")
+
+print(len(thissdict3))
+
+thissdict3["color"] = "red"
+print(thissdict3)
+
+thissdict3.pop("brand1")
+print(thissdict3)
+
+thissdict3.popitem()
+print(thissdict3)
+
+thissdict3.clear()
+print(thissdict3)
+
+
+#Week4 , Day24
+thissdict4 = {
+    "brand2" : "Ford" ,
+    "mode12" : "Mustang" , 
+    "year2" : 1964
+    }
+mydict1 = thissdict4.copy()
+print(mydict1)
+mydict2 = dict (thissdict4)
+print(mydict2)
+child1 = {
+    "name" : "Email" ,
+    "year" : 2004
+    }
+child2 = {
+    "name" : "Tobias" ,
+    "year" : 2007
+    }
+child3 = {
+    "name" : "Linus" ,
+    "year" : 2009
+    }
+myfamily = {
+    "child1" : child1 ,
+    "child2" : child2 ,
+    "child3" : child3
+    }
+print (myfamily)
+
+thissdict5 =dict( brand= "Ford" ,mode1 ="Mustang" , year =1964)
+print(thissdict5)
+
+
+
+#Week4 , Day25 & Day26
+QuizSet = {1,3,5,7,8}
+print(QuizSet)
+QuizSet.update ([4,8,12])
+print(QuizSet)
+QuizSet.remove(8)
+print(QuizSet)
+QuizSet.clear()
+print(QuizSet)
+QuizTest4 = {
+    "name" : "pigeon" ,
+    "type" : "bird" ,
+    "skin cover" : "feathers"
+    }
+print(QuizTest4)
+Test4 = QuizTest4.get ("type")
+print(Test4)
+
+QuizTest4 ["skin cover"] = "B"
+print(QuizTest4
